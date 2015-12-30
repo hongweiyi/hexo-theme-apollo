@@ -23,10 +23,15 @@ mixin posts()
         - })
 
 mixin post(item)
-    .post
-        article.post-block
-            h1.post-title
-                != item.title
-            +postInfo(item)
-            .post-content
-                != item.content
+    - var type = item.type
+       if type == 'tags'
+          .tags
+            != tagcloud({ min_font: 16, max_font: 35, amount: 999, color: true, start_color: '#42b983', end_color: '#225924', })
+       else
+          .post
+            article.post-block
+                h1.post-title
+                    != item.title
+                +postInfo(item)
+                .post-content
+                    != item.content

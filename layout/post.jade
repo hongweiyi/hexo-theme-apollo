@@ -12,6 +12,8 @@ block container
     +post(page)
 
 block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+   - var type = page.type
+     if type != 'tags'
+        include mixins/paginator
+        +post()
+        include partial/comment
