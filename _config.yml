@@ -3,7 +3,7 @@ menu:
   Weibo: http://weibo.com/1674333040
   twitter: https://twitter.com/hongwei89
   Archive: /archives
-  rss: /atom.xml
+  #rss: /atom.xml
 
 favicon: /favicon.png
 logo: /favicon.png
