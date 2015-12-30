@@ -1,18 +1,19 @@
 menu:
-    博客: /
-    微博: http://weibo.com/sunchongsheng
-    rss: /atom.xml
-    github: https://github.com/pinggod
+  Blog: /
+  Weibo: http://weibo.com/1674333040
+  twitter: https://twitter.com/hongwei89
+  Archive: /archives
+  rss: /atom.xml
 
 favicon: /favicon.png
 logo: /favicon.png
 
 # comment
 # e.g disqus: seansun
-disqus: 
-duoshuo: 
+disqus:
+duoshuo: yihongwei
 
 # google-analytics:
-ga: UA-65933410-1
+ga: UA-66911097-1
 # baidu-analytics:
-ba: //hm.baidu.com/hm.js?a36e15d9e2adec9a21fcdd9f686b1ed2
+ba:

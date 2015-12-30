@@ -1,0 +1,8 @@
+extends partial/layout
+
+block site_title
+      != 'Tags | ' + config.title
+
+block container
+    .tags
+      != tagcloud({ min_font: 16, max_font: 35, amount: 999, color: true, start_color: '#98d5af', end_color: '#42b983', })

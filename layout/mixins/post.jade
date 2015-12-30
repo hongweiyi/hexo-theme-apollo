@@ -2,6 +2,11 @@ mixin postInfo(item)
     .post-meta
         .post-time
             != full_date(item.date, 'll')
+            if item.tags && item.tags.length
+                != " | ["
+                != list_tags(item.tags, { show_count: false, style: 'none', separator: ', ' })
+                != "]"
+
 
 mixin posts()
     ul.home.post-list
