@@ -6,7 +6,11 @@ block site_title
 block container
     div.page-tags
         ul.tag-list
-            - site.posts.each(function(article){
+            - site.posts.data.sort(function(a, b) {
+            -    return new Date(b.date._i).getTime() - new Date(a.date._i).getTime();
+            -  })
+            // tag 下面应该不会有太多的文章，就不分页了。直接扫 site 吧
+            - site.posts.each(function(article) {
                 each val in article.tags['data']
                     if val.name== page.tag
                         li
