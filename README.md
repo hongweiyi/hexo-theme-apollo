@@ -7,6 +7,8 @@
 
 ## 安装
 
+[![asciicast](https://asciinema.org/a/emrvroa9054hz6k8ise0uxh2u.png)](https://asciinema.org/a/emrvroa9054hz6k8ise0uxh2u)
+
 ``` bash
 hexo init Blog 
 cd Blog 
@@ -22,8 +24,8 @@ git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
 ```yaml
 theme: apollo
 
-// 在归档页面显示所有文章
-// 需要上面安装的 hexo-generator-archive 插件支持
+# 在归档页面显示所有文章
+# 需要上面安装的 hexo-generator-archive 插件支持
 archive_generator:
     per_page: 0
     yearly: false
