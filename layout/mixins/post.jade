@@ -1,11 +1,15 @@
 mixin postInfo(item)
-    .post-meta
+    .post-info
         .post-time
             != full_date(item.date, 'll')
             if item.tags && item.tags.length
-                != " | ["
-                != list_tags(item.tags, { show_count: false, style: 'none', separator: ', ' })
-                != "]"
+                != " "
+                != list_tags(item.tags, { show_count: false, style: 'none', separator: ' ', class: 'post-tag' })
+                != ""
+    //-.post-info
+    //-    != full_date(item.date, 'll')
+    //-    if item.from && (is_home() || is_post())
+    //-        a.post-from(href=item.from target="_blank" title=item.from) 翻译 · 原文地址
 
 //- Index Page
 mixin posts()
